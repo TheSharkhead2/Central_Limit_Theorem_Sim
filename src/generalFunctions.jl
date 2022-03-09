@@ -40,6 +40,11 @@ function get_random_value(probDistribution::String; lower::Float64=0.0, upper::F
 
         return rand(distribution)
 
+    elseif probDistribution == "arcsin"
+        distribution = Arcsine(lower, upper)
+
+        return rand(distribution)
+
     end # if
 end # function get_random_value
 

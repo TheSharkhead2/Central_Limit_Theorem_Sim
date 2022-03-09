@@ -111,11 +111,22 @@ using .CentralLimitSim
 # end # for 
 
 # Gamma Distribution stuff
+# for i ∈ [10, 30, 100, 300, 500, 1000, 10000] # loop through all trial amounts 
+#     trialResults = get_sample_mean_mean(i, i; probDistribution="gamma")
+
+#     println("mean: ", trialResults[2], " std: ", trialResults[3])
+
+#     save_histogram(trialResults[1], "gamma$(i).png")
+
+# end # for 
+
+
+# Arcsin Distribution stuff
 for i ∈ [10, 30, 100, 300, 500, 1000, 10000] # loop through all trial amounts 
-    trialResults = get_sample_mean_mean(i, i; probDistribution="gamma")
+    trialResults = get_sample_mean_mean(i, i; probDistribution="arcsin")
 
     println("mean: ", trialResults[2], " std: ", trialResults[3])
 
-    save_histogram(trialResults[1], "gamma$(i).png")
+    save_histogram(trialResults[1], "arcsin$(i).png")
 
 end # for 

@@ -113,6 +113,36 @@ mean: 0.9990905388172547 std: 0.030162578505430013
 mean: 1.000129651037423 std: 0.009906402781831495
 ![10000 Samples](assets/gamma10000.png)
 
+# Arcsine Distribution
+
+## N = 10
+mean: 0.5015432029535283 std: 0.08006454727536308
+![10 Samples](assets/arcsin10.png)
+
+## N = 30 
+mean: 0.49087979942171 std: 0.0549411421748172
+![30 Samples](assets/arcsin30.png)
+
+# N = 100 
+mean: 0.4956540151277974 std: 0.03463948478423176
+![100 Samples](assets/arcsin100.png)
+
+# N = 300
+mean: 0.4991845334077276 std: 0.022027529906334133
+![300 Samples](assets/arcsin300.png)
+
+## N = 500 
+mean: 0.500311853569675 std: 0.016489163600665293
+![500 Samples](assets/arcsin500.png)
+
+## N = 1000
+mean: 0.4995849540622658 std: 0.011043373877858908
+![1000 Samples](assets/arcsin1000.png)
+
+# N = 10000 
+mean: 0.5000085326511222 std: 0.0035193228739115174
+![10000 Samples](assets/arcsin10000.png)
+
 # Observations 
 
 Generally, the larger the N, the closer to a normal distribution we get, and that is expected assuming the ceneral limit theorem. It is very dependent on the distribution for how high of a value for N it takes for this to converge. For example, the uniform and normal distributions showed convergence at 300 ish while the gamma distribution took till 10000 (it was still somewhat skewed at 1000). 
